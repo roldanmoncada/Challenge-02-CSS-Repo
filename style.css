@@ -1,11 +1,18 @@
+/* Made it so the webpage extends to the limits of the screen!!! Before there was a white outline to everything because my content didn't fit the whole screen!!!!  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 /* Styled header with gray background and some padding. Couldn't figure out how to extend the name box and gray background like the page we're trying to recreate looks, but I just played around with the margins to force it to work. Would like to know how to get that functionality from the start without the trickery, though. */
 .header {
     overflow: hidden;
     background-color: #575151;
     padding: 20px 10px;
-    margin-left: -2.75%;
-    margin-right: -10px;
-    margin-top: -10px;
+    /*margin-left: -2.75px;
+    margin-right: -5px; This looks dreadful in a live server as opposed to it looking alright in the simple browser so I am commenting it out */
+    margin-top: -5px;
     font-family: sans-serif;
   }
   
@@ -37,11 +44,7 @@
     color: black;
   }
   
-  /* It would be neat to have an active link go blue, but it isn't necessary according to the acceptance criteria*/
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
+
   
   /* Floated the info links section to the right as the expected outcome indicates */
   .header-right a {
@@ -49,9 +52,10 @@
     color: rgb(61, 199, 223);
     text-underline-offset: 3.5px;
     text-decoration-thickness: 2px;
+    margin-right: 15px;
   }
   
-  /* Added media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other and center them. That's how I feel it looks best, especially with the hover actions I gave the info links. */
+  /* Added media queries for responsiveness when screen is 500px wide or less, stack the links on top of each other and center them. That's how I feel it looks best, especially with the hover actions I gave the info links. */
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
@@ -61,4 +65,109 @@
     .header-right {
       float: none;
     }
+  }
+
+
+  .hero-img {
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  /* Added styling for hero class background photo. It's larger than I wanted, but I'm forcing it to be a box like the expected outcome indicates. */
+
+  #hero-bg {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    position: relative;
+
+  }
+
+  .hero-text {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end; 
+    font-family: sans-serif;
+    font-size: 18px;
+    color:rgb(61, 199, 223);
+    background-color: #575151;
+    padding: 5px;
+    margin-right: 15px;
+    transform: translate(10%, -50%);
+    left: 81.5%;
+    bottom: 60%;
+  }
+
+  /* Unsure how to make this function properly and affect the "hero-text" class when the screen size is smaller. */
+  @media screen and (max-width: 500px) {
+    .hero-text {
+      float: none;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-right: 15%;
+      padding-right: 20px;
+    }
+
+  }
+
+
+
+
+
+
+
+  
+
+/* copied and pasted the nav-bar/header items to mirror the same styling and changed the class names to footer so it reflects the new portion of the site it is targeting. */
+  .footer {
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 10px;
+    /*margin-left: -2.75px;
+    margin-right: -5px; This looks dreadful in a live server as opposed to it looking alright in the simple browser so I am commenting it out */
+    margin-top: -5px;
+    font-family: sans-serif;
+  }
+  
+
+  /* Styled footer links and made them all be underlined. That way I could have that set as a default for all footer items and edit as necessary in the individual class stylings. */
+  .footer a {
+    color: #575151;
+    text-align: center;
+    padding: 12px;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  
+  
+  /* Made it so the background color on a hover action turns white and the text turns black so that there is sufficient contrast. If I were to have left it the same blue as before, it would be very difficult to read */
+  .footer a:hover {
+    background-color: rgb(61, 199, 223);
+    color: #575151;
+  }
+  
+  
+  /* Floated the info links section to the right as the expected outcome indicates */
+  .footer-right a {
+    float: right;
+    color: #575151;
+    text-underline-offset: 3.5px;
+    text-decoration-thickness: 2px;
+    margin-right: 15px;
+    align-content: space-around;
+  }
+
+  .footer-left {
+    float: left;
+    color: #575151;
+    font-size: 50px;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    align-content: space-between;
   }
