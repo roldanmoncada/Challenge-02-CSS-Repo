@@ -1,7 +1,7 @@
 # Challenge-02-CSS-Repo
 
 ## <ins>Description: </ins>
-    The
+    This whole CSS stuff is really kicking my rear. This is supposed to function as a first portfolio, but has really turned into an exercise in how to get CSS to function properly. I've gotten about 1/3 of the way through before deciding to just turn it in for constructive feedback and returning to it when I have a bit more time.
 
 ## <ins>User Story: </ins>
 ```
@@ -31,4 +31,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 The following animation shows the web application's appearance and functionality:
 
 ### <ins>**Link to the deployed application:**</ins>
-Placeholder :)
+https://roldanmoncada.github.io/Challenge-02-CSS-Repo/
