@@ -113,7 +113,33 @@
 
   }
 
+  .about-me {
+    float: left;
+    font-size: 50px;
+    padding: 20px 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    color: #575151;
+  }
 
+  .about-me p {
+    width: 33%;
+    float: right;
+    font-size: 18px;
+  }
+
+  #me {
+    padding-left: 61.5px;
+  }
+
+  .Work {
+    float: left;
+    font-size: 50px;
+    padding: 20px 23.5px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    color: #575151;
+  }
 
 
 
@@ -126,8 +152,6 @@
     overflow: hidden;
     background-color: white;
     padding: 20px 10px;
-    /*margin-left: -2.75px;
-    margin-right: -5px; This looks dreadful in a live server as opposed to it looking alright in the simple browser so I am commenting it out */
     margin-top: -5px;
     font-family: sans-serif;
   }
@@ -152,7 +176,15 @@
     color: #575151;
   }
   
-  
+  .footer-left {
+    float: left;
+    color: #575151;
+    font-size: 50px;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    align-content: space-between;
+  }
+
   /* Floated the info links section to the right as the expected outcome indicates */
   .footer-right a {
     float: right;
@@ -163,11 +195,5 @@
     align-content: space-around;
   }
 
-  .footer-left {
-    float: left;
-    color: #575151;
-    font-size: 50px;
-    flex-wrap: wrap;
-    margin-right: 15px;
-    align-content: space-between;
-  }
+  
+
