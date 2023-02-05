@@ -8,13 +8,13 @@ body {
     min-width: 700px;
   }
 
-  .myName {
+  /* .myName {
     font-size: 25px;
     font-weight: bold;
     background-color: rgb(61, 199, 223);
     text-decoration: none;
     margin: 1rem;
-  }
+  } */
   
 header {
   display: flex;
@@ -57,7 +57,10 @@ header {
   color: blue;
 }
   
-container {
+.container {
+  display: flex;
+justify-content: flex-start;
+margin-top: 30px;
   max-width: 1516px;
 }
 
@@ -80,6 +83,7 @@ margin: 0 30px 0 60px;
 
 #text-about {
 box-sizing: border-box;
+position: relative;
 font-size: 25px;
 margin-top: 10px;
 padding-right: 15px;
@@ -90,16 +94,17 @@ width: 80%;
 display: flex;
 justify-content: flex-start;
 margin-top: 30px;
+max-width: 1516px;
 }
 
 #work-aside {
-border-right: solid black;
-box-sizing: border-box;
-width: 20%;
-text-align: right;
-padding-right: 2.5%;
-margin: 0 30px 0 60px;
-font-size: 35px;
+  box-sizing: border-box;
+  border-right: solid black;
+  width: 20%;
+  font-size: 35px;
+  text-align: right;
+  padding-right: 2.5%;
+  margin: 0 30px 0 60px;
 }
 
 .work-section {
@@ -194,27 +199,13 @@ bottom: 0;
     font-size: 1.25rem;
   }
 
-  /* Added media queries for responsiveness when screen is 500px wide or less, stack the links on top of each other and center them. That's how I feel it looks best, especially with the hover actions I gave the info links. */
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-    .header-right {
-      float: none;
-    }
-  }
-
-
-  /* Unsure how to make this function properly and affect the "hero-text" class when the screen size is smaller. */
-  @media screen and (max-width: 500px) {
-
-  }
 
 
 footer {
-
+height: 200px;
+display: flex;
+align-items: center;
+margin-top: 20px;
 }
 
 #contact-me {
@@ -222,9 +213,39 @@ footer {
 }
   
 .contact-aside {
-
+  box-sizing: border-box;
+  border-right: solid black;
+  width: 20%;
+  font-size: 35px;
+  text-align: right;
+  padding-right: 2.5%;
+  margin: 0 30px 0 60px;
 }
 
-.footer-right {
-
+.footer-list {
+width: 80%;
+display: flex;
+justify-content: space-around;
 }
+
+.footer-list a {
+  font-size: 20px;
+  }
+
+    /* Added media queries for responsiveness when screen is 500px wide or less, stack the links on top of each other and center them. That's how I feel it looks best, especially with the hover actions I gave the info links. */
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+      .header-right {
+        float: none;
+      }
+    }
+  
+  
+    /* Unsure how to make this function properly and affect the "hero-text" class when the screen size is smaller. */
+    @media screen and (max-width: 500px) {
+  
+    }
