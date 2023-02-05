@@ -6,15 +6,17 @@
 
 body {
     min-width: 700px;
+    background-color: #575151;
   }
 
-  /* .myName {
+  .myName {
     font-size: 25px;
     font-weight: bold;
     background-color: rgb(61, 199, 223);
     text-decoration: none;
     margin: 1rem;
-  } */
+    padding: 1.5rem;
+  }
   
 header {
   display: flex;
@@ -32,6 +34,8 @@ header {
 
   nav a {
     padding-right: 10px;
+    padding-left: 10px;
+    position: center;
     color: blue;
     background-color: rgb(61, 199, 223);
   }
@@ -52,9 +56,10 @@ header {
 
 .sub {
   background-color: rgb(61, 199, 223);
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0 40px 30px 0;
   color: blue;
+  padding: 1.5rem;
 }
   
 .container {
@@ -74,7 +79,7 @@ height: 200px;
 #aside-about {
 box-sizing: border-box;
 border-right: solid black;
-width: 20%;
+width: 55%; /* I managed to force my border-right properties to line up by making the width this %. But I know that's only a quick and dirty fix, would I be able to get some additional explanation here as to how I could fix this more comprehensively? */
 font-size: 35px;
 text-align: right;
 padding-right: 2.5%;
@@ -89,6 +94,10 @@ margin-top: 10px;
 padding-right: 15px;
 width: 80%;
 }
+
+/* #text-about p {
+  background-color: antiquewhite;
+} */
   
 .main {
 display: flex;
@@ -183,6 +192,10 @@ width: 200px;
 bottom: 0;
 }
 
+.surf-report :hover, .led-wall :hover, .calculator :hover, .pastel-puzzles :hover, .run-buddy :hover {
+  background-color: #ddd;
+}
+
 .led-text, .calculator-text, .pastel-text, .run-text {
   position: absolute;
   background-color: rgb(61, 199, 223);
@@ -229,8 +242,16 @@ justify-content: space-around;
 }
 
 .footer-list a {
-  font-size: 20px;
+  padding-right: 10px;
+    color: blue;
+    background-color: rgb(61, 199, 223);
   }
+
+
+.footer-list a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
     /* Added media queries for responsiveness when screen is 500px wide or less, stack the links on top of each other and center them. That's how I feel it looks best, especially with the hover actions I gave the info links. */
     @media screen and (max-width: 500px) {

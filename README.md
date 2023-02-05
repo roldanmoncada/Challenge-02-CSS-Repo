@@ -1,7 +1,7 @@
 # Challenge-02-CSS-Repo
 
 ## <ins>Description: </ins>
-    This whole CSS stuff is really kicking my rear. This is supposed to function as a first portfolio, but has really turned into an exercise in how to get CSS to function properly. I've gotten about 1/3 of the way through before deciding to just turn it in for constructive feedback and returning to it when I have a bit more time.
+    Quick redo of this portfolio for a better grade. Still having issues with CSS in terms of inheritance and specificity. However, this portfolio is leagues better than the old one I had. Looking forward to refactoring this to use React.
 
 ## <ins>User Story: </ins>
 ```
@@ -26,9 +26,15 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+## <ins>Screenshots of the deployed application:</ins>
+Topmost portion of the portfolio page
+![image](https://user-images.githubusercontent.com/112277445/216848266-236fe714-47d3-470e-95d1-cc795780b4c0.png)
 
-### <ins>**Gif of the expected outcome:**</ins>
-The following animation shows the web application's appearance and functionality:
+Work section of the page
+![image](https://user-images.githubusercontent.com/112277445/216848314-3341e02f-c15c-44aa-ae2f-f2e8f3590788.png)
+
+Bottom portion of the site
+![image](https://user-images.githubusercontent.com/112277445/216848354-d1badaaa-c82b-4f82-887d-a95e4864c8f5.png)
 
 ### <ins>**Link to the deployed application:**</ins>
 https://roldanmoncada.github.io/Challenge-02-CSS-Repo/
