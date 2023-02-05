@@ -2,53 +2,85 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS Portfolio v1.0!</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="header">
+        <header>
+            <div>
             <a href="#default" class="myName">Roldan Moncada</a>
-            <section class="header-right">
+            </div>
+          <nav class="header">    
                 <a href="#resume">Resume</a>
                 <a href="#contact">Contact Me</a>
                 <a href="#work">Work</a>
                 <a href="#about">About Me</a>
-            </section>
           </nav>
-        <section class="hero-container">
-            <img id="hero-bg" src="https://images2.pixlis.com/background-image-stripes-and-lines-seamless-tileable-jordy-blue-grey-232c2m.png">
-            <article class="hero-text">
-                <h1>First Portfolio of Bootcamp!</h1>
-            </article>
-        </section>
-        <br>
-            <section class="about-me"> 
-              <section>  
-              <div>About | </div>
-              <div id="me"> Me |</div>
-              </section>  
-            
-              <p>Helvetica put a bird on it church-key BlueBottle banjo bespoke brunch Etsy authentic Marfa quinoa typewriter plaid direct trade small batch wayfarers bicycle rights cliche craft beer gastropub single origin coffee Godard Carles you probably haven't heard of them Irony pickled kitsch synth sriracha gentrify literally heirloom blog Truffaut paleo scenester</p>
-              <br></br.>
-              <p>Echo park sriracha Pinterest vegan green mouse black key card can calavera picture frame unicorn cat camel cream book statue cable letterpress phone wire case cover screen koi fish apple bottom jeans puss in boots with the fur with the fur </p>
-            </section>
-        <br>
-            <section class="Work">Work |</section>
-      <footer class="footer">
+        </header>  
+        <div class="hero-image">
+            <p class="sub">My very first portfolio!</p>
+        </div>
+        
+        <div class="container">
+            <div id="about">
+                <aside id="aside-about">
+                    <h2>About Me</h2>
+                </aside>
+                <div class="text-about">
+                    <p>Hello, this will be the paragraph that contains a little information about me.</p>
+                </div>
+            </div>
+        </div>
 
-        <br>
-        <br>
-        <section class="footer-left">Contact |
-            <br>
-           <section id="me2"> Me |</section>
-        <section class="footer-right">
-            <a href="#spotify">Spotify</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#github">GitHub</a>
+        <main class="main">
+            <aside id="work-aside">
+                <h2>Work</h2>
+            </aside>
+            <section class="work-section">
+                <div class="surf-report">
+                    <div class="surf-text">
+                        <h4><a href="#surf-report">Surf Report</a></h4>
+                        <p class="mern-stack">MERN Stack</p>
+                    </div>
+                </div>
+                <div class="led-wall">
+                    <div class="led-text">
+                        <h4><a href="#led-wall">LED Wall</a></h4>
+                        <p class="node-iot">Node/IoT</p>
+                    </div>
+                </div>
+                <div class="calculator">
+                    <div class="calculator-text">
+                        <h4><a href="#calculator">Calculator</a></h4>
+                        <p class="react-js-css">React/JS/CSS</p>
+                    </div>
+                </div>
+                <div class="pastel-puzzle">
+                    <div class="pastel-text">
+                        <h4><a href="#pastel-puzzle">Pastel Puzzle</a></h4>
+                        <p class="mern-stack-pastel">MERN Stack</p>
+                    </div>
+                </div>
+                <div class="run-buddy">
+                    <div class="run-text">
+                        <h4><a href="#run-buddy">Run Buddy</a></h4>
+                        <p class="html-css">HTML/CSS</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+     
+      <footer id="contact-me">
+        <aside class="contact-aside">
+            <h3>Contact Me</h3>
+        </aside>
+        <div class="footer-right">
+            <a href="#phone">(515) 555-0118</a>
             <a href="#email">roldan.h.moncada@gmail.com</a>
-            <a href="#phoneNumber">(555) 555-5555</a>
-        </section>
+            <a href="#github">roldanmoncada</a>
+        </div>
       </footer>
     </body>
 </html>

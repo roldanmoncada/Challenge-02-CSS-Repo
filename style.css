@@ -1,60 +1,103 @@
-/* Made it so the webpage extends to the limits of the screen!!! Before there was a white outline to everything because my content didn't fit the whole screen!!!!  */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
 
-/* Styled header with gray background and some padding. Couldn't figure out how to extend the name box and gray background like the page we're trying to recreate looks, but I just played around with the margins to force it to work. Would like to know how to get that functionality from the start without the trickery, though. */
-.header {
-    overflow: hidden;
-    background-color: #575151;
-    padding: 20px 10px;
-    /*margin-left: -2.75px;
-    margin-right: -5px; This looks dreadful in a live server as opposed to it looking alright in the simple browser so I am commenting it out */
-    margin-top: -5px;
-    font-family: sans-serif;
+body {
+    min-width: 700px;
   }
-  
 
-  /* Styled header links and made them all be underlined. That way I could have that set as a default for all header items and edit as necessary in the individual class stylings. */
-  .header a {
-    float: left;
-    color: #575151;
-    text-align: center;
-    padding: 12px;
-    text-decoration: underline;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  }
-  
-  
-  /* Style the myName anchor class. Removed the underline from this item manually, using the functionality I set up and described above.*/
-  .header a.myName {
+  .myName {
     font-size: 25px;
     font-weight: bold;
     background-color: rgb(61, 199, 223);
     text-decoration: none;
+    margin: 1rem;
   }
   
-  /* Made it so the background color on a hover action turns white and the text turns black so that there is sufficient contrast. If I were to have left it the same blue as before, it would be very difficult to read */
-  .header a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #575151;
+}
 
-  
-  /* Floated the info links section to the right as the expected outcome indicates */
-  .header-right a {
-    float: right;
-    color: rgb(61, 199, 223);
-    text-underline-offset: 3.5px;
-    text-decoration-thickness: 2px;
-    margin-right: 15px;
+.header {
+    overflow: hidden;
+    padding-right: 20px;
+    font-size: medium;
   }
+
+  nav a {
+    padding-right: 10px;
+    color: blue;
+    background-color: rgb(61, 199, 223);
+  }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
   
+.hero-image {
+  display: flex;
+  height: 300px;
+  align-items: flex-end;
+  justify-content: end;
+  background-image: url(https://images2.pixlis.com/background-image-stripes-and-lines-seamless-tileable-jordy-blue-grey-232c2m.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.sub {
+  background-color: rgb(61, 199, 223);
+  font-size: 1rem;
+  margin: 0 40px 30px 0;
+  color: blue;
+}
+  
+container {
+  max-width: 1516px;
+}
+
+#about {
+display: flex;
+justify-content: space-evenly;
+margin-top: 20px;
+height: 200px;
+}
+
+#aside-about {
+box-sizing: border-box;
+border-right: solid black;
+width: 20%;
+font-size: 35px;
+text-align: right;
+padding-right: 2.5%;
+margin: 0 30px 0 60px;
+}
+
+#text-about {
+box-sizing: border-box;
+font-size: 25px;
+margin-top: 10px;
+padding-right: 15px;
+width: 80%;
+}
+  
+.main {
+
+}
+
+#work-aside {
+
+}
+
+.work-section {
+  
+}
+
   /* Added media queries for responsiveness when screen is 500px wide or less, stack the links on top of each other and center them. That's how I feel it looks best, especially with the hover actions I gave the info links. */
   @media screen and (max-width: 500px) {
     .header a {
@@ -68,78 +111,11 @@
   }
 
 
-  .hero-img {
-    background-repeat: no-repeat;
-    position: relative;
-  }
-
-  /* Added styling for hero class background photo. It's larger than I wanted, but I'm forcing it to be a box like the expected outcome indicates. */
-
-  #hero-bg {
-    width: 100%;
-    height: 100%;
-    max-height: 300px;
-    position: relative;
-
-  }
-
-  .hero-text {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-end; 
-    font-family: sans-serif;
-    font-size: 18px;
-    color:rgb(61, 199, 223);
-    background-color: #575151;
-    padding: 5px;
-    margin-right: 15px;
-    transform: translate(10%, -50%);
-    left: 81.5%;
-    bottom: 60%;
-  }
-
   /* Unsure how to make this function properly and affect the "hero-text" class when the screen size is smaller. */
   @media screen and (max-width: 500px) {
-    .hero-text {
-      float: none;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      margin-right: 15%;
-      padding-right: 20px;
-    }
 
   }
 
-  .about-me {
-    float: left;
-    font-size: 50px;
-    padding: 20px 10px;
-    margin-top: 5px;
-    font-family: sans-serif;
-    color: #575151;
-  }
-
-  .about-me p {
-    width: 33%;
-    float: right;
-    font-size: 18px;
-  }
-
-  #me {
-    padding-left: 61.5px;
-  }
-
-  .Work {
-    float: left;
-    font-size: 50px;
-    padding: 20px 23.5px;
-    margin-top: 5px;
-    font-family: sans-serif;
-    color: #575151;
-  }
 
 
 
